@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      HEAD/Tail?
+    </title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <p>HEAD  /  TAIL </p> 
+    
+    <button class="HEAD"
+    onclick="
+    const randomno= Math.random();
+    let move='';
+    if (randomno >0 && randomno < 1/2) {
+      move = 'HEAD';
+    }
+    else if(randomno>1/2 && randomno<=1){
+        move='TAIL';
+      }
+      alert(`RESULT IS : ${move}`);
+    ">HEAD</button>
+   <button class="HEAD"
+   onclick="
+   const randomno= Math.random();
+   let move='';
+   if (randomno >0 && randomno < 1/2) {
+     move = 'HEAD';
+   }
+   else if(randomno>1/2 && randomno<=1){
+       move='TAIL';
+     }
+     alert(`RESULT IS : ${move}`);
+   ">TAIL</button>
+
+  </body>
+</html>

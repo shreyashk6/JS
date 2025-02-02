@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    
+
+
+<!--EXPLAINATION
+    How eval() Works
+If you pass a string containing a valid JavaScript expression to eval(), it will evaluate the expression and return the result.
+
+Example 1: Evaluating Expressions
+javascript
+Copy
+Edit
+let expression = "2 + 3 * 4";
+let result = eval(expression); // Evaluates the string as a math expression
+console.log(result); // Output: 14
+  -->
+
+
+
+
+
+    <button onclick="
+      calculation += '1';   //DECLAARING 2 AWS A STRING
+      console.log(calculation);
+    ">1</button>
+    <button onclick="
+    calculation+='2';
+    console.log(calculation)
+    ">
+    2
+    </button>
+    <button onclick="
+    calculation += '3';
+    console.log(calculation);
+  ">3</button>
+
+  <button onclick="
+    calculation += '4';
+    console.log(calculation);
+  ">4</button>
+
+  <button onclick="
+    calculation += '5';
+    console.log(calculation);
+  ">5</button>
+
+    <button onclick="
+      // Note: eval() takes a string and runs it as code.
+      // Avoid using eval() in real world projects since
+      // it can potentially be given harmful code to run.
+      // Only use eval() for learning purposes.
+      calculation = eval(calculation);
+      console.log(calculation);
+    ">=</button>
+
+    <button onclick="
+    calculation += ' + ';
+    console.log(calculation);
+    ">+</button>
+      
+
+  
+    <button onclick="
+      calculation = '';
+      console.log(calculation);
+    ">Clear</button>
+
+    <script>
+      let calculation = '';
+    </script>
+  </body>
+</html>
