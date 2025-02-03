@@ -9,13 +9,34 @@
 
 
   <body>
-    <script>     
+    <script>    
+    /* 
       function function1() {
         console.log('hello');
         console.log(2+2);
       }
       function1();
       function1();
+      */
+//method1
+      function calcTax(){
+        console.log(1000*0.1); 
+      }
+      calcTax();
+//method2
+      function calcTax1(parameter1){
+        console.log(parameter1 * 0.1); 
+      }
+      calcTax1(2000);
+//method3- reusing
+      calcTax1(5000);
+//method4 - using 2 values
+      function calcTax2(parameter2,taxpercent){
+              console.log(parameter2 * taxpercent); 
+            }
+      calcTax2(2000, 0.2);
+
+
     </script>
   </body>
 </html>

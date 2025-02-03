@@ -20,11 +20,44 @@
     
     <button class="rock" 
     onclick="
-   pickcomputermove();
+    playgame('ROCK');
+    ">ROCK</button>
+
+    
+    <button onclick="
+    playgame('PAPER');
+    ">PAPER</button>
+
+    
+    <button onclick="
+      playgame('SCISSORS');
+    ">SCISSORS</button>
+       
+<script>     
+function playgame(playermove){
+  console.log(pickcomputermove());
 
 
-  //  console.log(computermove);
-    let result='';
+let result='';
+if(playermove==='SCISSORS'){
+    if(computermove === 'ROCK'){
+      result= 'You lose';
+    }else if (computermove==='PAPER'){
+      result='You Win';
+    }
+    else {
+      result= 'Tie';
+  }
+} else if(playermove==='PAPER'){
+      if(computermove === 'ROCK'){
+        result= 'You Win';
+      }else if (computermove==='PAPER'){
+        result='Tie';
+      }
+      else {
+        result= 'You lose';
+    }
+} else if (playermove=== 'ROCK'){
     if(computermove === 'ROCK'){
       result= 'Tie';
     }else if (computermove==='PAPER'){
@@ -33,45 +66,11 @@
     else {
       result= 'You Win';
     }
-    alert(`You picked ROCK. Computer picked ${computermove}. ${result}`);
-    ">ROCK</button>
-
-    
-<button onclick="
-pickcomputermove();
-
-
-//  console.log(computermove);
-let result='';
-if(computermove === 'ROCK'){
-  result= 'You Win';
-}else if (computermove==='PAPER'){
-  result='Tie';
 }
-else {
-  result= 'You lose';
-}
-alert(`You picked PAPER. Computer picked ${computermove}. ${result}`);
-">PAPER</button>
 
-    
-<button onclick="
-    pickcomputermove();
+alert(`You picked ${playermove}. Computer picked ${computermove}. ${result}`);
 
-
-//  console.log(computermove);
-let result='';
-if(computermove === 'ROCK'){
-  result= 'You lose';
-}else if (computermove==='PAPER'){
-  result='You Win';
-}
-else {
-  result= 'Tie';
-}
-alert(`You picked SCISSORS. Computer picked ${computermove}. ${result}`);
-">SCISSORS</button>
-    <script>     
+    }
     let computermove='';
      function pickcomputermove() {
       const randomno = Math.random();
@@ -86,6 +85,7 @@ alert(`You picked SCISSORS. Computer picked ${computermove}. ${result}`);
         else{
           computermove='SCISSORS';
         }       
+    
      }
     </script>
   </body>
