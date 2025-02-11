@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      HEAD/TAIL?
+    </title>
+    <style>
+      .HEAD{
+      background: #00ff80;
+      touch-action: double-tap-zoom;
+      }
+      .TAIL{
+      background: #00ff80;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <p>HEAD  /  TAIL </p> 
+    <button class="HEAD"
+    onclick="
+    const randomno= Math.random();
+    let move='';
+    if (randomno >0 && randomno < 1/2) {
+      move = 'HEAD';
+    }
+    else if(randomno>1/2 && randomno<=1){
+        move='TAIL';
+      }
+      alert(`RESULT IS : ${move}`);
+    ">HEAD</button>
+
+
+   <button class="TAIL"
+   onclick="
+   const randomno= Math.random();
+   let move='';
+   if (randomno >0 && randomno < 1/2) {
+     move = 'HEAD';
+   }
+   else if(randomno>1/2 && randomno<=1){
+       move='TAIL';
+     }
+     alert(`RESULT IS : ${move}`);
+   ">TAIL</button>
+
+  </body>
+</html>

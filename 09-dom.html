@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>DOM</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+
+    <script>    
+
+    //shows the button query
+      console.log(document.querySelector('button').innerHTML);
+    //to change the text insdie the button
+      document.querySelector('button').innerHTML = 'Changed!';
+
+    //to show the query of second 
+     const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+
+/*
+     console.log(document.title);
+     document.title = ' Changed';
+
+     console.log(document.body);
+     console.log(typeof document.body);
+      //innerHTML control all the html inside the <body> tag
+     document.body.innerHTML = 'hello';
+     document.body.innerHTML = 'Changed';
+
+     //innerText allows us to also change the text of button
+     document.body.innerHTML = '<button>Good job!</button>';
+*/
+    /*
+    //innerHTML change the text of button
+      document.body.innerHTML = 'hello';
+    //change the title name  
+      document.title = 'Good job! ';
+      */
+
+
+    </script>
+  </body>
+</html>

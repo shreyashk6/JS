@@ -6,8 +6,6 @@
      
     </style>
   </head>
-
-
   <body>
     <script>    
     /*
@@ -19,20 +17,20 @@
     console.log(product.name);
     console.log(product.price);
    
-    //tochange value
+   //tochange value
     product.name='cotton socks';
     console.log(product);
 
-   //add new property
+  //add new property
     product.sales = true;
     console.log(product);
 
-    //delete property
+  //delete property
     delete product.sales;
     console.log(product);
 */
 
-
+/*
       const product2={
         name:'shirt',
         ['delivery-time']: '1 day',
@@ -57,14 +55,52 @@
       product2.fun();
 
 
-      //TO CONVERT JSSCRIPT INTO JSON:
+    //TO CONVERT JSSCRIPT INTO JSON:
       console.log(JSON.stringify(product2));
       console.log(typeof JSON.stringify(product2));
 
-      //TO CONVERT BACK INTO JS FROM JSON FORMAT
+    //TO CONVERT BACK INTO JS FROM JSON FORMAT
       const jsonstring = JSON.stringify(product2);
       console.log(JSON.parse(jsonstring));
+*/
+
+
+      console.log('Hello'.length);
+
+      console.log('Namaste'.toUpperCase());
+
+      console.log('YoOo'.toLowerCase());
+
+      console.log('ABC'.repeat(3));
+
       
+      const object1= {
+        message: 'hello'
+      };
+
+
+  //CHANGING THE VALUE OF CONSTANT DECLARED VARIABLE
+      const object2 = object1; 
+      object1.message = 'good job!';
+      console.log(object1);
+
+      const object4 = {
+        message: 'good job!',
+        price: 799
+      };
+
+      const { message,price } = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5={
+        message:message,  //  message    (both r same)
+        method: function function1(){
+          console.log('method');
+        }
+      };
+      console.log(object5);
+      object5.method();
     </script>
   </body>
 </html>
