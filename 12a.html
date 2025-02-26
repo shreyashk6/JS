@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Todo List</title>
+  <style>
+    body{
+      background-color: darkgreen;
+    }
+  </style>
+    </head>
+  <body>
+    <p>Start-Finsihed</p>
+    <body>
+      <button class="js-button" onclick="
+        updateButton();
+      ">Start</button>
+  
+      <script>
+        // Grouping the JavaScript code into a function
+        // is optional, but it is a bit cleaner.
+        function updateButton() {
+          const button = document.querySelector('.js-button');
+  
+          setTimeout(function() {
+            button.innerHTML = 'Finished!';
+          }, 1000);
+        }
+      </script>
+    </body>
+  </body>

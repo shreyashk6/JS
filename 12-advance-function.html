@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Advance Functions</title>
+  </head>
+  <body>
+    <button onclick="" class="js-button"
+    >Click</button>
+    <script>    
+      const buttonElement = document.querySelector('.js-button');
+
+      const eventListener= () => {
+        console.log('click');
+      };
+      //add
+      buttonElement.addEventListener('click',eventListener);        
+      //remove
+      buttonElement.removeEventListener('click', eventListener);
+
+      buttonElement.addEventListener('click',() => {
+        console.log('click2');        
+      });
+      
+
+    /*
+      function greeting(){
+        console.log('hello');
+      }
+      greeting();
+//
+      const num=2;
+      const function1 = function greeting(){
+        console.log('hello2');
+      };
+      console.log(function1);
+      console.log(typeof function1);
+      function1();
+//
+      const object1 = {
+        num: 2,
+        fun : function greeting(){
+          console.log('hello3');
+        }
+      };
+      object1.fun();
+//
+      function display(parem){
+        console.log(parem);
+      }
+      display(2);
+// passing a function into a ....
+      function run(parem){
+        parem();
+      }
+      run(function(){
+        console.log('hello4');
+      });
+
+      */
+/*
+//setting timer for a function
+      setTimeout(function(){
+        console.log('timeout');
+        console.log('timeout2');
+      },3000);
+      console.log('next line');
+
+//setting an interval 
+      setInterval(function(){
+        console.log('timeout3');
+      },3000);
+      console.log('next line 2');
+*/
+/*
+      [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+      ].forEach(function(value,index) {//forEach loops through the array
+        if(value==='wash dishes'){
+          return;
+        }
+        console.log(index);//shows index
+        console.log(value);
+      });
+*/
+/*
+      //lets do the same with arrow function
+            [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+      ].forEach((value,index)=> {//forEach loops through the array
+        if(value==='wash dishes'){
+          return;
+        }
+        console.log(index);//shows index
+        console.log(value);
+      });
+*/
+/*
+      const regularFunction =  function(param,param2){
+        console.log('hello');
+        return 5;
+      };
+
+
+      const arrowFunction = (param,param2) =>  {
+        console.log('helllo');
+        return 5;
+      };
+      arrowFunction();
+
+      const oneParam = param => {
+        console.log(param+1);
+      };
+      oneParam(2);
+
+      const oneLine = () =>  2 +3;
+      console.log(oneLine());
+*/
+/*
+      const object2 = {
+        method: () => {
+
+        },
+        method() {
+
+
+        },
+      };
+*/
+
+
+
+</script>    </body>
+  </body>
+</html>
