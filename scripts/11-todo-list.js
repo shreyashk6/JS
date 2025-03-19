@@ -6,23 +6,25 @@ renderTodoList();
 //render means print on the screen
 function renderTodoList() {
     let todoListHtml = '';
-    todoList.forEach(function(todoObject,index){
-      const name = todoObject.name;
-      const dueDate = todoObject.dueDate;
-      //Or you can write it like this
-      //const {name, dueDate} = todoList[i];
-      const html =`
-          <div>${name}</div>
-          <div>${dueDate}</div>
-            <button onclick="todoList.splice(${index}, 1);
-            renderTodoList();
-            "
-            class="delete-todo-button">
-            Delete</button>
-          
-          `;
-      todoListHtml += html;
-    });
+    
+    for(let i = 0; i < todoList.length; i++) {
+    const todoObject = todoList[i];
+    const name = todoObject.name;
+    const dueDate = todoObject.dueDate;
+    //Or you can write it like this
+    //const {name, dueDate} = todoList[i];
+    const html =`
+        <div>${name}</div>
+        <div>${dueDate}</div>
+          <button onclick="todoList.splice(${i}, 1);
+          renderTodoList();
+          "
+          class="delete-todo-button">
+          Delete</button>
+        
+        `;
+    todoListHtml += html;
+  }
   //console.log(todoListHtml);
   document.querySelector('.js-todo-list').innerHTML = todoListHtml;
 }
